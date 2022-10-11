@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Blog Post</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <link href="/css/output.css" rel="stylesheet" />
+    <link href="../css/output.css" rel="stylesheet" />
   </head>
   <body>
     <header class="navbar">
@@ -29,24 +29,24 @@
       </svg>
       <ul class="navbar__links">
         <li class="navbar__item">
-          <a href="/index.html" class="navbar__link">Home</a>
+          <a href="../index.html" class="navbar__link">Home</a>
         </li>
         <li class="navbar__item">
-          <a href="/products.html" class="navbar__link">Product</a>
+          <a href="./products.html" class="navbar__link">Product</a>
         </li>
         <li class="navbar__item">
-          <a href="/pricing.html" class="navbar__link">Pricing</a>
+          <a href="./pricing.html" class="navbar__link">Pricing</a>
         </li>
         <li class="navbar__item">
-          <a href="/aboutUs.html" class="navbar__link">About Us</a>
+          <a href="./aboutUs.html" class="navbar__link">About Us</a>
         </li>
         <li class="navbar__item">
-          <a href="/blog.html" class="navbar__link bg-brandblue-gradient"
+          <a href="./blog.html" class="navbar__link bg-brandblue-gradient"
             >Blog</a
           >
         </li>
         <li class="navbar__item">
-          <a href="/contact.html" class="navbar__link">Contact</a>
+          <a href="./contact.html" class="navbar__link">Contact</a>
         </li>
         <li class="navbar__item">
           <button class="button button--primary">Free trial</button>
@@ -54,145 +54,141 @@
       </ul>
     </header>
     <main>
-      <section class="contact">
-        <h1 class="contact__title">Get in touch with us</h1>
-        <div class="contact__form">
-          <form class="form form--primary">
-            <div class="contact__header">
-              <h5 class="contact__headline">Drop us a message</h5>
-              <p class="contact__subheadline">
-                We will get back to you as soon as possible.
-              </p>
-            </div>
-            <div class="form__fields">
-              <div class="form__row">
-                <div class="form__group">
-                  <label class="form__label" for="fullname">Fullname</label>
-                  <input
-                    type="text"
-                    name="fullname"
-                    id="fullname"
-                    placeholder="Full name"
-                    class="form__input"
-                  />
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="companyname"
-                    >Companyname</label
-                  >
-                  <input
-                    type="text"
-                    name="companyname"
-                    id="companyname"
-                    placeholder="Company name"
-                    class="form__input"
-                  />
-                </div>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  class="form__input"
-                />
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="subject">Subject</label>
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  class="form__input"
-                />
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="message">Message</label>
-                <textarea
-                  class="form__textarea form-control"
-                  id="message"
-                  rows="3"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button class="w-full button button--primary">Send</button>
-            </div>
-          </form>
-          <div class="contact__details">
-            <div class="contact__item">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="contact__icon"
-              >
-                <circle cx="24" cy="24" r="24" fill="#6B7CFF" />
-                <path
-                  d="M17.63 15.8333C17.7 16.8717 17.875 17.8867 18.155 18.855L16.755 20.255C16.2767 18.855 15.9733 17.3733 15.8683 15.8333H17.63ZM29.1333 29.8567C30.125 30.1367 31.14 30.3117 32.1667 30.3817V32.12C30.6267 32.015 29.145 31.7117 27.7333 31.245L29.1333 29.8567ZM18.75 13.5H14.6667C14.025 13.5 13.5 14.025 13.5 14.6667C13.5 25.6217 22.3783 34.5 33.3333 34.5C33.975 34.5 34.5 33.975 34.5 33.3333V29.2617C34.5 28.62 33.975 28.095 33.3333 28.095C31.8867 28.095 30.475 27.8617 29.1683 27.43C29.0517 27.3833 28.9233 27.3717 28.8067 27.3717C28.5033 27.3717 28.2117 27.4883 27.9783 27.71L25.4117 30.2767C22.11 28.585 19.4033 25.89 17.7233 22.5883L20.29 20.0217C20.6167 19.695 20.71 19.24 20.5817 18.8317C20.15 17.525 19.9167 16.125 19.9167 14.6667C19.9167 14.025 19.3917 13.5 18.75 13.5Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="contact__info">
-                <h5 class="contact__content">+ 1800 145 276</h5>
-                <p class="contact__description">Free support</p>
-              </div>
-            </div>
-            <div class="contact__item">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="contact__icon"
-              >
-                <circle cx="24" cy="24" r="24" fill="#6B7CFF" />
-                <path
-                  d="M17.035 32.0593L20.7917 22.94L19.625 32.0714L17.035 32.0593ZM27.2083 22.9521L30.965 32.0714L28.375 32.0714L27.2083 22.9521ZM13.5 34.4879L21.6667 34.5L24 16.2857L26.3333 34.5L34.5 34.4879L24 9L13.5 34.4879Z"
-                  fill="white"
-                />
-              </svg>
-
-              <div class="contact__info">
-                <h5 class="contact__content">finsweet@gmail.com</h5>
-                <p class="contact__description">Help Email support</p>
-              </div>
-            </div>
-            <div class="contact__item">
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="contact__icon"
-              >
-                <circle cx="24" cy="24" r="24" fill="#6B7CFF" />
-                <path
-                  d="M36 15.9375C36 14.5969 34.92 13.5 33.6 13.5H14.4C13.08 13.5 12 14.5969 12 15.9375V30.5625C12 31.9031 13.08 33 14.4 33H33.6C34.92 33 36 31.9031 36 30.5625V15.9375ZM33.6 15.9375L24 22.0312L14.4 15.9375H33.6ZM33.6 30.5625H14.4V18.375L24 24.4688L33.6 18.375V30.5625Z"
-                  fill="white"
-                />
-              </svg>
-              <div class="contact__info">
-                <h5 class="contact__content">sales@finsweet.com</h5>
-                <p class="contact__description">Sales Enquiry</p>
-              </div>
-            </div>
-          </div>
+      <section class="blog-title">
+        <div class="blog-title__container">
+          <h2 class="blog-title__headline">
+            New invoicing features to help you
+            <br class="hidden lg:inline-block" />
+            get paid faster
+          </h2>
+          <p class="blog-title__date">Luke Matthews l November 8, 2021</p>
         </div>
-
         <img
-          src="./images/contact-Blur Gradient.png"
+          src="../images/Main image.png"
+          alt="About us"
+          class="blog-title__img"
+        />
+        <img
+          src="../images/trending-post-Blur Gradient1.png"
           alt=""
-          class="absolute inset-y-0 object-cover object-center -left-10"
+          class="absolute top-0 left-0 object-cover object-center"
+        />
+        <img
+          src="../images/trending-post-Blur Gradient2.png"
+          alt=""
+          class="absolute top-0 right-0 object-cover object-center"
         />
       </section>
-
+      <section class="article">
+        <h3 class="article__headline">This is a blog post headline</h3>
+        <p class="article__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui
+          auctor dictum eget a elit. Pellentesque varius diam risus, ut
+          condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar
+          cursus nec quis tellus. Quisque feugiat tortor lectus, pretium
+          interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi.
+          Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam
+          ornare nibh vel dui egestas, eu posuere metus convallis.
+        </p>
+        <p class="article__content">
+          Ut non urna a odio condimentum dictum. Proin egestas erat a orci
+          ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
+          justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi
+          velit, ultricies eget enim vel, venenatis mollis ante. Maecenas
+          sodales tristique quam. Suspendisse fringilla massa vel dolor ornare
+          rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui.
+          Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque
+          egestas, non condimentum mi bibendum. Sed est eros, molestie
+          consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet
+          massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis
+          tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris
+          at nisi sed elit gravida malesuada.
+        </p>
+        <h4 class="article__sub-headline">
+          This is a small blog post headline
+        </h4>
+        <p class="article__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui
+          auctor dictum eget a elit. Pellentesque varius diam risus, ut
+          condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar
+          cursus nec quis tellus. Quisque feugiat tortor lectus, pretium
+          interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi.
+          Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam
+          ornare nibh vel dui egestas, eu posuere metus convallis.
+        </p>
+        <p class="article__quote">
+          Ut non urna a odio condimentum dictum. Proin egestas erat a orci
+          ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
+          justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi
+          velit, ultricies eget enim vel, venenatis mollis ante.
+        </p>
+        <p class="article__content">
+          Ut non urna a odio condimentum dictum. Proin egestas erat a orci
+          ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
+          justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi
+          velit, ultricies eget enim vel, venenatis mollis ante. Maecenas
+          sodales tristique quam. Suspendisse fringilla massa vel dolor ornare
+          rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui.
+          Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque
+          egestas, non condimentum mi bibendum. Sed est eros, molestie
+          consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet
+          massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis
+          tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris
+          at nisi sed elit gravida malesuada.
+        </p>
+      </section>
+      <section class="post">
+        <h2 class="post__headline">Read more posts</h2>
+        <div class="post__list">
+          <div class="post__item">
+            <img
+              src="../images/close-up-photography-of-woman-sitting-beside-table-while-using-macbook-3178818.png"
+              alt="Blog post"
+              class="post__img"
+            />
+            <h5 class="post__title">
+              How to Make Recurring Invoicing More Efficient
+            </h5>
+            <p class="post__summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <p class="post__date">Luke Matthews l November 8, 2021</p>
+          </div>
+          <div class="post__item">
+            <img
+              src="../images/woman-writing-on-her-notebook-while-holding-a-cup-7616800.png"
+              alt="Blog post"
+              class="post__img"
+            />
+            <h5 class="post__title">
+              How to Reduce Checkout Abandonment for more Conversions
+            </h5>
+            <p class="post__summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <p class="post__date">Luke Matthews l November 8, 2021</p>
+          </div>
+          <div class="post__item">
+            <img
+              src="../images/photo-of-female-engineer-working-on-her-workspace-3862632.png"
+              alt="Blog post"
+              class="post__img"
+            />
+            <h5 class="post__title">
+              10 Customer Retention Strategies for better Dwell time
+            </h5>
+            <p class="post__summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <p class="post__date">Luke Matthews l November 8, 2021</p>
+          </div>
+        </div>
+      </section>
       <section class="cta">
         <h2 class="cta__headline">
           Are you ready to grow your <br class="hidden lg:inline-block" />
