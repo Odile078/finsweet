@@ -171,7 +171,7 @@
         font-style: normal;
         line-height: 120%;
     }
-    .content__sub-headline,.discover-more__subheadline,.home-cta__subheadline{
+    .content__sub-headline,.discover-more__subheadline,.home-cta__subheadline,.why-us__subheadline{
         @apply text-base font-normal text-brandblack;
         font-style: normal;
         line-height: 150%;
@@ -212,7 +212,7 @@
         line-height: 150%;
     }
     .grid-container__description--secondary,.discover-more__description--secondary{
-        @apply text-lg font-normal pt-2
+        @apply text-lg font-normal pt-2 
     }
     .grid-container__img,.home-cta__img{
         @apply z-10 object-cover object-center;
