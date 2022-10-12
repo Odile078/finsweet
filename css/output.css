@@ -1202,12 +1202,12 @@ video {
   height: 100%;
 }
 
-.linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak {
+.linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak, .testimonial__linebreak {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak {
+  .linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak, .testimonial__linebreak {
     display: inline-block;
   }
 }
@@ -3092,12 +3092,6 @@ video {
 .group[open] .group-open\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 768px) {
-  .md\:inline-block {
-    display: inline-block;
-  }
 }
 
 @media (min-width: 1024px) {
