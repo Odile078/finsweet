@@ -1003,17 +1003,21 @@ video {
 
 /* content */
 
-.content, .discover-more__content, .why-us__content, .home-cta__content {
+.content, .discover-more__content, .why-us__content, .home-cta__content, .marketing-insights__content, .goals__content, .trending-post__content {
   z-index: 10;
 }
 
-.content > :not([hidden]) ~ :not([hidden]), .discover-more__content > :not([hidden]) ~ :not([hidden]), .why-us__content > :not([hidden]) ~ :not([hidden]), .home-cta__content > :not([hidden]) ~ :not([hidden]) {
+.content > :not([hidden]) ~ :not([hidden]), .discover-more__content > :not([hidden]) ~ :not([hidden]), .why-us__content > :not([hidden]) ~ :not([hidden]), .home-cta__content > :not([hidden]) ~ :not([hidden]), .marketing-insights__content > :not([hidden]) ~ :not([hidden]), .goals__content > :not([hidden]) ~ :not([hidden]), .trending-post__content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
-.content__headline-label, .discover-more__headline-label, .why-us__headline-label {
+.marketing-insights__content--secondary {
+  align-self: center;
+}
+
+.content__headline-label, .discover-more__headline-label, .why-us__headline-label, .goals__headline-label, .trending-post__headline-label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1024,7 +1028,7 @@ video {
   font-weight: 700;
 }
 
-.content__headline-label,.discover-more__headline-label,.why-us__headline-label{
+.content__headline-label,.discover-more__headline-label,.why-us__headline-label,.goals__headline-label,.trending-post__headline-label{
   font-style: normal;
   line-height: 120%;
   background-image: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
@@ -1034,7 +1038,7 @@ video {
   background-clip: text;
 }
 
-.content__headline, .discover-more__headline, .why-us__headline, .home-cta__headline {
+.content__headline, .discover-more__headline, .why-us__headline, .home-cta__headline, .goals__headline, .trending-post__headline {
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
@@ -1042,12 +1046,12 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.content__headline,.discover-more__headline,.why-us__headline,.home-cta__headline{
+.content__headline,.discover-more__headline,.why-us__headline,.home-cta__headline,.goals__headline,.trending-post__headline{
   font-style: normal;
   line-height: 120%;
 }
 
-.content__sub-headline, .discover-more__subheadline, .home-cta__subheadline, .why-us__subheadline {
+.content__sub-headline, .discover-more__subheadline, .home-cta__subheadline, .why-us__subheadline, .goals__subheadline, .trending-post__subheadline {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -1055,14 +1059,14 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.content__sub-headline,.discover-more__subheadline,.home-cta__subheadline,.why-us__subheadline{
+.content__sub-headline,.discover-more__subheadline,.home-cta__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline{
   font-style: normal;
   line-height: 150%;
 }
 
 /* grid block */
 
-.grid-container, .discover-more, .why-us, .home-cta {
+.grid-container, .discover-more, .why-us, .home-cta, .marketing-insights {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   padding-left: 1.5rem;
@@ -1072,14 +1076,14 @@ video {
 }
 
 @media (min-width: 768px) {
-  .grid-container, .discover-more, .why-us, .home-cta {
+  .grid-container, .discover-more, .why-us, .home-cta, .marketing-insights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
-.grid-container,.discover-more,.why-us,.home-cta{
+.grid-container,.discover-more,.why-us,.home-cta,.marketing-insights{
   gap: 88px;
 }
 
@@ -1167,7 +1171,7 @@ video {
   font-weight: 400;
 }
 
-.grid-container__img, .home-cta__img {
+.grid-container__img, .home-cta__img, .marketing-insights__img {
   z-index: 10;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1414,6 +1418,16 @@ video {
 
 .values__headline{
   line-height: 120%;
+}
+
+.values__headline-break, .about-us__sub-headlinebreak, .header__sub-headlinebreak, .blog-title__headline-break {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .values__headline-break, .about-us__sub-headlinebreak, .header__sub-headlinebreak, .blog-title__headline-break {
+    display: inline-block;
+  }
 }
 
 .values__sub-headline {
