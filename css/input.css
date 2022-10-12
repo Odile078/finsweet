@@ -24,6 +24,12 @@
         font-style: normal;
         line-height: 150%;
     }
+    .navbar__button,.header__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
+    }
+    .header__button--secondary{
+        @apply bg-white text-brandblack hover:bg-brandblack hover:text-white
+    }
     /* Hero */
     .hero{
         @apply relative overflow-hidden
@@ -118,21 +124,21 @@
         font-style: normal;
         line-height: 120%;
     }
-    .features-card {
+    .features__card {
         @apply grid grid-cols-1 gap-8 p-16 rounded-3xl sm:grid-cols-2 md:grid-cols-3;
     }
-    .features-card--primary{
+    .features__card--primary{
         @apply  bg-opacity-50 bg-brandviolet ;
 
     }
-    .features-card--secondary{
+    .features__card--secondary{
         @apply  bg-brandviolet-dark ;
 
     }
-    .feature-card__item{
+    .feature__card-item{
         @apply space-y-6
     }
-    .feature-card__item--secondary{
+    .feature__card-item--secondary{
         @apply  border-gray-300 border-t-2 sm:border-t-0 md:border-l-gray-300 md:border-l-2 py-8 sm:py-0 md:px-8
     }
     .feature__title{
@@ -147,10 +153,10 @@
         opacity: 0.87;
     }
     /* content */
-    .content{
+    .content,.discover-more__content,.why-us__content{
         @apply space-y-12 z-10
     }
-    .content__headline-label{
+    .content__headline-label,.discover-more__headline-label,.why-us__headline-label{
         @apply text-2xl font-bold bg-clip-text w-fit; 
         font-style: normal;
         line-height: 120%;
@@ -160,52 +166,52 @@
         text-fill-color: transparent;
         background-clip: text;
     }
-    .content__headline{
+    .content__headline,.discover-more__headline,.why-us__headline{
         @apply text-5xl font-bold text-brandblack;
         font-style: normal;
         line-height: 120%;
     }
-    .content__sub-headline{
+    .content__sub-headline,.discover-more__subheadline{
         @apply text-base font-normal text-brandblack;
         font-style: normal;
         line-height: 150%;
     }
     /* grid block */
-    .grid-container{
+    .grid-container,.discover-more,.why-us{
         @apply grid grid-cols-1 px-6 py-20 md:px-20 md:grid-cols-2;
         gap: 88px;
     }
     .grid-container--secondary{
         @apply relative py-16;
     }
-    .grid-container__list{
+    .grid-container__list,.discover-more__list,.why-us__list{
         @apply space-y-8 self-center
     }
-    .grid-container__list--secondary{
+    .grid-container__list--secondary,.discover-more__list--secondary{
         @apply space-y-10
     }
-    .grid-container__item{
+    .grid-container__item,.discover-more__item,.why-us__item{
         @apply flex gap-x-6
     }
-    .grid-container__left-column{
+    .grid-container__left-column,.discover-more__left-column{
         @apply flex-1 space-y-2
     }
-    .grid-container__headline{
+    .grid-container__headline,.discover-more__headline{
         @apply text-xl font-medium text-brandblack;
         font-style: normal;
         line-height: 140%;
     }
-    .grid-container__headline--secondary{
+    .grid-container__headline--secondary,.discover-more__headline--secondary{
         @apply text-2xl font-bold text-brandblack;
         font-style: normal;
         line-height: 140%;
     }
-    .grid-container__description{
+    .grid-container__description,.discover-more__description,.why-us__description{
         @apply text-xl font-medium text-brandblack;
         font-style: normal;
         line-height: 150%;
     }
-    .grid-container__description--secondary{
+    .grid-container__description--secondary,.discover-more__description--secondary{
         @apply text-lg font-normal pt-2
     }
     .grid-container__img{
@@ -326,9 +332,15 @@
         font-size: 56px;
         line-height: 110%;
     }
+    .cta__headline-break{
+        @apply hidden lg:inline-block
+    }
     .cta__description{
         @apply pb-2 text-base not-italic font-normal text-center text-brandblack leading-extra-loose;
     
+    }
+    .cta__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
     }
     /* Plans */
     .plan{
@@ -644,7 +656,7 @@
         @apply bg-brandviolet text-brandblack hover:bg-brandblack-light hover:text-white
     }
     /* form */
-    .form{
+    .form,.footer__form,.header__form{
         @apply space-y-4 col-span-2 
     }
     .form--primary{
@@ -653,29 +665,26 @@
     .form__fields{
         @apply space-y-2
     }
-    .form__headline{
-        @apply text-lg not-italic font-semibold text-white ;
-        line-height: 150%;
-    }
-    .form__container{
+   
+    .form__container,.header__form-container,.footer__form-container{
         @apply flex rounded-xl;
     }
-    .form__container--primary{
+    .form__container--primary,.header__form-container{
         @apply bg-white py-2 self-center
     }
     .form__row{
         @apply grid grid-cols-1 sm:grid-cols-2 gap-4
     }
-    .form__group{
+    .form__group,.header__form-group,.footer__form-group{
         @apply flex rounded-lg bg-white
     }
-    .form__label{
+    .form__label,.header__form-label,.footer__form-label{
         @apply sr-only
     }
-    .form__input{
+    .form__input,.header__form-input,.footer__form-input{
         @apply flex-1 px-6 py-4 m-0 text-base font-normal capitalize transition ease-in-out rounded-lg opacity-80 text-brandblack focus:text-gray-700 focus:bg-white focus:border-blue-200 focus:border-2 focus:outline-none;
     }
-    .form__input--dark{
+    .form__input--dark,.footer__form-input{
         @apply text-white text-opacity-50 rounded-lg bg-brandblack focus:border focus:bg-brandblack-light ;
     }
     .form__textarea{
@@ -704,46 +713,54 @@
     .footer__cols{
         @apply z-10 relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5
     }
-    .footer-column{
+    .footer__column{
         @apply space-y-2
     }
-    .footer-column-subscribe{
+    .footer__column-subscribe{
         @apply sm:col-span-2 space-y-8
     }
-    .footer-column__title{
+    .footer__column-title{
         @apply text-lg font-bold text-white capitalize;
         line-height: 150%;
     }
-    .footer-column__item{
+    .footer__column-item{
         @apply text-base not-italic font-normal;
         line-height: 150%;
     }
-    .footer-column__link{
+    .footer__column-link{
         @apply text-white opacity-60 hover:opacity-100 active:opacity-100;
     }
-    
-    .footer-row{
+    .footer__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl bg-white text-brandblack hover:bg-brandblack hover:text-white
+    }
+    .footer__row{
         @apply z-10 relative flex gap-8 justify-center items-center overflow-hidden
     }
-    .footer-row__copyright{
+    .footer__copyright{
         @apply relative pl-16 text-xs not-italic font-normal text-white opacity-50;      
         line-height: 18px;
     }
-    .footer-row__copyright::before{
+    .footer__copyright::before{
         @apply absolute top-1/2 -left-full;
         content: '';
         width: 260px;
         height: 3px;
         border-bottom: 1px solid #888888;
     }
-    .footer-row__socials{
+    .footer__socials{
         @apply flex gap-6 items-center relative pr-16
     }
-    .footer-row__socials::after{
+    .footer__socials::after{
         @apply absolute top-1/2 -right-full;
         content: '';
         width: 260px;
         height: 3px;
         border-bottom: 1px solid #888888;
    }
+   .footer__headline{
+    @apply text-lg not-italic font-semibold text-white ;
+    line-height: 150%;
+    }
+    
+  
 }
