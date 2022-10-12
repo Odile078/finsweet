@@ -20,7 +20,7 @@
         font-style: normal;
         line-height: 150%;
     }
-    .navbar__button,.header__button,.home-cta__button{
+    .navbar__button,.header__button,.impressions__button{
         @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
     }
     .header__button--secondary{
@@ -149,7 +149,7 @@
         opacity: 0.87;
     }
     /* content */
-    .content,.discover-more__content,.why-us__content,.home-cta__content,.marketing-insights__content,.goals__content,.trending-post__content{
+    .content,.discover-more__content,.why-us__content,.impressions__content,.marketing-insights__content,.goals__content,.trending-post__content{
         @apply space-y-12 z-10
     }
     .marketing-insights__content--secondary{
@@ -165,22 +165,22 @@
         text-fill-color: transparent;
         background-clip: text;
     }
-    .content__headline,.discover-more__headline,.why-us__headline,.home-cta__headline,.goals__headline,.trending-post__headline{
+    .content__headline,.discover-more__headline,.why-us__headline,.impressions__headline,.goals__headline,.trending-post__headline{
         @apply text-5xl font-bold text-brandblack;
         font-style: normal;
         line-height: 120%;
     }
-    .content__sub-headline,.discover-more__subheadline,.home-cta__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline{
+    .content__sub-headline,.discover-more__subheadline,.impressions__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline{
         @apply text-base font-normal text-brandblack;
         font-style: normal;
         line-height: 150%;
     }
     /* grid block */
-    .grid-container,.discover-more,.why-us,.home-cta,.marketing-insights{
+    .grid-container,.discover-more,.why-us,.impressions,.marketing-insights{
         @apply grid grid-cols-1 px-6 py-20 md:px-20 md:grid-cols-2;
         gap: 88px;
     }
-    .grid-container--secondary,.home-cta--secondary{
+    .grid-container--secondary,.impressions--secondary{
         @apply relative py-16;
     }
     .grid-container__list,.discover-more__list,.why-us__list{
@@ -213,10 +213,10 @@
     .grid-container__description--secondary,.discover-more__description--secondary{
         @apply text-lg font-normal pt-2 
     }
-    .grid-container__img,.home-cta__img,.marketing-insights__img{
+    .grid-container__img,.impressions__img,.marketing-insights__img{
         @apply z-10 object-cover object-center;
     }
-    .grid-container__background,.home-cta__background{
+    .grid-container__background,.impressions__background{
         @apply absolute inset-0 object-cover object-center h-full
     }
     .grid-container__blur-gradient{
@@ -325,23 +325,23 @@
         opacity: 0.87;
     }
     /* cta / call-to-action */
-    .cta{
+    .call-to-action{
         @apply py-32 px-6 sm:px-10 md:px-20 flex flex-col items-center justify-center gap-6 relative z-20
     }
-    .cta__headline{
+    .call-to-action__headline{
         @apply not-italic font-bold text-center text-brandblack;
         font-style: normal;
         font-size: 56px;
         line-height: 110%;
     }
-    .cta__headline-break{
+    .call-to-action__headline-break{
         @apply hidden lg:inline-block
     }
-    .cta__description{
+    .call-to-action__description{
         @apply pb-2 text-base not-italic font-normal text-center text-brandblack leading-extra-loose;
     
     }
-    .cta__button{
+    .call-to-action__button{
         @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
     }
     /* Plans */
@@ -764,5 +764,7 @@
     line-height: 150%;
     }
     
-  
+    .custom{
+        @apply group
+    }
 }
