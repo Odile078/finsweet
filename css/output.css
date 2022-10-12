@@ -1207,12 +1207,12 @@ video {
   height: 100%;
 }
 
-.linebreak {
+.linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .linebreak {
+  .linebreak, .header__linebreak, .about-us__linebreak, .values__linebreak, .blog-title__linebreak {
     display: inline-block;
   }
 }
@@ -1418,16 +1418,6 @@ video {
 
 .values__headline{
   line-height: 120%;
-}
-
-.values__headline-break, .about-us__sub-headlinebreak, .header__sub-headlinebreak, .blog-title__headline-break {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .values__headline-break, .about-us__sub-headlinebreak, .header__sub-headlinebreak, .blog-title__headline-break {
-    display: inline-block;
-  }
 }
 
 .values__sub-headline {
@@ -1980,13 +1970,13 @@ video {
   border-radius: 24px
 }
 
-.contact__header > :not([hidden]) ~ :not([hidden]) {
+.form__header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.contact__headline {
+.form__headline {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -1995,7 +1985,7 @@ video {
   line-height: 120%;
 }
 
-.contact__subheadline {
+.form__subheadline {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
