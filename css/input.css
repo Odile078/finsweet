@@ -24,7 +24,7 @@
         font-style: normal;
         line-height: 150%;
     }
-    .navbar__button,.header__button{
+    .navbar__button,.header__button,.home-cta__button{
         @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
     }
     .header__button--secondary{
@@ -153,7 +153,7 @@
         opacity: 0.87;
     }
     /* content */
-    .content,.discover-more__content,.why-us__content{
+    .content,.discover-more__content,.why-us__content,.home-cta__content{
         @apply space-y-12 z-10
     }
     .content__headline-label,.discover-more__headline-label,.why-us__headline-label{
@@ -166,22 +166,22 @@
         text-fill-color: transparent;
         background-clip: text;
     }
-    .content__headline,.discover-more__headline,.why-us__headline{
+    .content__headline,.discover-more__headline,.why-us__headline,.home-cta__headline{
         @apply text-5xl font-bold text-brandblack;
         font-style: normal;
         line-height: 120%;
     }
-    .content__sub-headline,.discover-more__subheadline{
+    .content__sub-headline,.discover-more__subheadline,.home-cta__subheadline{
         @apply text-base font-normal text-brandblack;
         font-style: normal;
         line-height: 150%;
     }
     /* grid block */
-    .grid-container,.discover-more,.why-us{
+    .grid-container,.discover-more,.why-us,.home-cta{
         @apply grid grid-cols-1 px-6 py-20 md:px-20 md:grid-cols-2;
         gap: 88px;
     }
-    .grid-container--secondary{
+    .grid-container--secondary,.home-cta--secondary{
         @apply relative py-16;
     }
     .grid-container__list,.discover-more__list,.why-us__list{
@@ -214,10 +214,10 @@
     .grid-container__description--secondary,.discover-more__description--secondary{
         @apply text-lg font-normal pt-2
     }
-    .grid-container__img{
+    .grid-container__img,.home-cta__img{
         @apply z-10 object-cover object-center;
     }
-    .grid-container__background{
+    .grid-container__background,.home-cta__background{
         @apply absolute inset-0 object-cover object-center h-full
     }
     .grid-container__blur-gradient{
