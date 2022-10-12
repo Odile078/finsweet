@@ -131,19 +131,19 @@
         @apply  bg-brandviolet-dark ;
 
     }
-    .feature__card-item{
+    .features__card-item{
         @apply space-y-6
     }
-    .feature__card-item--secondary{
+    .features__card-item--secondary{
         @apply  border-gray-300 border-t-2 sm:border-t-0 md:border-l-gray-300 md:border-l-2 py-8 sm:py-0 md:px-8
     }
-    .feature__title{
+    .features__title{
         @apply font-bold text-brandblack;
         font-style: normal;
         font-size: 32px;
         line-height: 120%;
     }
-    .feature__description{
+    .features__description{
         @apply text-base font-normal text-brandblack;
         line-height: 150%;
         opacity: 0.87;
@@ -434,9 +434,22 @@
         @apply p-10 bg-white ;
         border-radius: 24px
     }
+    
+    .faq__question-container{
+        @apply list-none flex flex-wrap items-center cursor-pointer focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500 rounded group-open:rounded-b-none group-open:z-[1] group-open:bg-white relative
+    }
+    .faq__button{
+        @apply flex items-center justify-between flex-1 text-sm
+    }
     .faq__question{
         @apply text-2xl font-bold text-brandblack;
         line-height: 140%;
+    }
+    .faq__icons-container{
+        @apply flex items-center justify-center w-4
+    }
+    .faq__answer-container{
+        @apply p-4
     }
     .faq__answer{
         @apply text-base font-normal text-justify text-brandblack ;
