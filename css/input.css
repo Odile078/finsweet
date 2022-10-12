@@ -232,7 +232,7 @@
     .grid-container__blur-gradient--primary{
         @apply right-0 h-full bottom-24
     }
-    .linebreak{
+    .linebreak,.header__linebreak,.about-us__linebreak,.values__linebreak,.blog-title__linebreak{
         @apply hidden lg:inline-block
     }
     /* Logos */
