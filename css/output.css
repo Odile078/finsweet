@@ -551,40 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 /* Navbar */
 
 .navbar {
@@ -1011,7 +977,7 @@ video {
   align-self: center;
 }
 
-.content__headline-label, .discover-more__headline-label, .why-us__headline-label, .goals__headline-label, .trending-post__headline-label {
+.content__headline-label, .discover-more__headline-label, .why-us__headline-label, .goals__headline-label, .trending-post__headline-label, .marketing-insights__headline-label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1030,7 +996,7 @@ video {
   color: transparent;
 }
 
-.content__headline, .discover-more__headline, .why-us__headline, .impressions__headline, .goals__headline, .trending-post__headline {
+.content__headline, .discover-more__headline, .why-us__headline, .impressions__headline, .goals__headline, .trending-post__headline, .marketing-insights__headline {
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
@@ -1040,7 +1006,7 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.content__sub-headline, .discover-more__subheadline, .impressions__subheadline, .why-us__subheadline, .goals__subheadline, .trending-post__subheadline {
+.content__sub-headline, .discover-more__subheadline, .impressions__subheadline, .why-us__subheadline, .goals__subheadline, .trending-post__subheadline, .marketing-insights__subheadline {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -1422,7 +1388,7 @@ video {
 
 .values__list--primary {
   gap: 1.5rem;
-  border-right-width: 67px;
+  border-top-right-radius: 67px;
   background-image: url('../images/Background-values.png');
   background-size: cover;
   background-position: center;

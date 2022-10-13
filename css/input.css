@@ -133,13 +133,13 @@
     .marketing-insights__content--secondary{
         @apply self-center
     }
-    .content__headline-label,.discover-more__headline-label,.why-us__headline-label,.goals__headline-label,.trending-post__headline-label{
+    .content__headline-label,.discover-more__headline-label,.why-us__headline-label,.goals__headline-label,.trending-post__headline-label,.marketing-insights__headline-label{
         @apply text-2xl font-bold w-fit not-italic leading-[120%] bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
     }
-    .content__headline,.discover-more__headline,.why-us__headline,.impressions__headline,.goals__headline,.trending-post__headline{
+    .content__headline,.discover-more__headline,.why-us__headline,.impressions__headline,.goals__headline,.trending-post__headline,.marketing-insights__headline{
         @apply text-5xl font-bold text-brandblack not-italic leading-[120%];
     }
-    .content__sub-headline,.discover-more__subheadline,.impressions__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline{
+    .content__sub-headline,.discover-more__subheadline,.impressions__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline,.marketing-insights__subheadline{
         @apply text-base font-normal text-brandblack not-italic leading-[150%];
     }
     /* grid block */
@@ -246,7 +246,7 @@
         @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
     }
     .values__list--primary{
-        @apply gap-6 py-24 pl-20 pr-24 bg-[url('../images/Background-values.png')] bg-no-repeat bg-center bg-cover border-r-[67px];
+        @apply gap-6 py-24 pl-20 pr-24 bg-[url('../images/Background-values.png')] bg-no-repeat bg-center bg-cover rounded-tr-[67px];
     }
     .values__list--secondary{
         @apply gap-16 p-10 md:p-16 bg-[#F9F0FB] rounded-3xl;
