@@ -1,0 +1,638 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    /* Navbar */
+    .navbar{
+        @apply px-6 md:px-20 flex justify-between items-center bg-white pt-2 pb-1.5 
+    }
+    .navbar__logo{
+        @apply w-32 h-8
+    }
+    .navbar__links{
+        @apply hidden lg:flex flex-col lg:flex-row space-x-8 items-center
+    }
+    .nav__links--mobile{
+        @apply absolute w-screen
+    }
+    .navbar__link{
+        @apply text-base not-italic font-normal text-brandblack leading-extra-loose;
+    }
+    .navbar__button,.header__button,.impressions__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
+    }
+    .header__button--secondary{
+        @apply bg-white text-brandblack hover:bg-brandblack hover:text-white
+    }
+    /* Hero */
+    .hero{
+        @apply relative overflow-hidden
+    }
+    .hero__blur-gradient{
+        @apply absolute object-cover object-center top-56 md:-top-56 md:left-1/4
+    }
+    /* Header */
+    
+    .header{
+        @apply relative grid gap-4 px-6 pt-24 pb-32 overflow-hidden md:px-20;
+        /* md:px-52 */
+    }
+    .header--primary{
+        @apply grid-cols-1 justify-items-center lg:px-52
+    }
+    .header--secondary{
+        @apply grid-cols-1 md:grid-cols-2 
+    }
+    .header__content{
+        @apply flex flex-col gap-8 justify-center z-10 items-center
+        
+    }
+    .header__content--secondary{
+        @apply flex flex-col gap-6 self-center overflow-hidden items-baseline
+    }
+    .header__headline{
+        @apply font-bold text-brandblack text-[56px] leading-[110%];
+    }
+    .header__headline--primary{
+        @apply text-center
+    }
+    .header__sub-headline{
+        @apply text-lg font-normal text-brandblack leading-extra-loose not-italic opacity-[0.87];
+    }
+    .header__sub-headline--primary{
+        @apply text-center
+    }
+    .header__action{
+        @apply  space-x-3
+    }    
+    .header__action--secondary{
+        @apply p-2 bg-brandviolet rounded-[20px]
+    }    
+    .header__img{
+        @apply z-10 object-cover object-center ;
+    }
+    .header__img--primary{
+        @apply lg:max-w-4xl
+    }
+    .header__images{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 z-10
+    }
+    .header__image-item{
+        @apply object-cover object-center
+    }   
+    .header__blur-gradient{
+        @apply absolute object-cover object-center
+    }
+    .header__blur-gradient--home{
+        @apply top-56
+    }
+    .header__blur-gradient--about-us{
+        @apply top-0 left-0
+    }
+    /* Features */
+    .features{
+        @apply px-6 md:px-20 py-32 space-y-8 
+    }
+    .features--secondary{
+        @apply flex flex-col justify-center items-center
+    }
+    .features__headline-label{
+        @apply text-2xl font-bold text-center bg-clip-text w-fit not-italic leading-[120%] bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text; 
+    }
+    .features__headline{
+        @apply text-5xl font-bold text-center text-brandblack leading-[120%] not-italic;
+    }
+    .features__card {
+        @apply grid grid-cols-1 gap-8 p-16 rounded-3xl sm:grid-cols-2 md:grid-cols-3;
+    }
+    .features__card--primary{
+        @apply  bg-opacity-50 bg-brandviolet ;
+
+    }
+    .features__card--secondary{
+        @apply  bg-brandviolet-dark ;
+
+    }
+    .features__card-item{
+        @apply space-y-6
+    }
+    .features__card-item--secondary{
+        @apply  border-gray-300 border-t-2 sm:border-t-0 md:border-l-gray-300 md:border-l-2 py-8 sm:py-0 md:px-8
+    }
+    .features__title{
+        @apply font-bold text-brandblack leading-[120%] not-italic text-[32px];
+    }
+    .features__description{
+        @apply text-base font-normal text-brandblack leading-extra-loose opacity-[0.87];
+        
+    }
+    /* content */
+    .content,.discover-more__content,.why-us__content,.impressions__content,.marketing-insights__content,.goals__content,.trending-post__content{
+        @apply space-y-12 z-10
+    }
+    .marketing-insights__content--secondary{
+        @apply self-center
+    }
+    .content__headline-label,.discover-more__headline-label,.why-us__headline-label,.goals__headline-label,.trending-post__headline-label,.marketing-insights__headline-label{
+        @apply text-2xl font-bold w-fit not-italic leading-[120%] bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text;
+    }
+    .content__headline,.discover-more__headline,.why-us__headline,.impressions__headline,.goals__headline,.trending-post__headline,.marketing-insights__headline{
+        @apply text-5xl font-bold text-brandblack not-italic leading-[120%];
+    }
+    .content__sub-headline,.discover-more__subheadline,.impressions__subheadline,.why-us__subheadline,.goals__subheadline,.trending-post__subheadline,.marketing-insights__subheadline{
+        @apply text-base font-normal text-brandblack not-italic leading-[150%];
+    }
+    /* grid block */
+    .grid-container,.discover-more,.why-us,.impressions,.marketing-insights{
+        @apply grid grid-cols-1 px-6 py-20 md:px-20 md:grid-cols-2 gap-[88px];
+    }
+    .grid-container--secondary,.impressions--secondary{
+        @apply relative py-16;
+    }
+    .grid-container__list,.discover-more__list,.why-us__list{
+        @apply space-y-8 self-center
+    }
+    .grid-container__list--secondary,.discover-more__list--secondary{
+        @apply space-y-10
+    }
+    .grid-container__item,.discover-more__item,.why-us__item{
+        @apply flex gap-x-6
+    }
+    .grid-container__left-column,.discover-more__left-column{
+        @apply flex-1 space-y-2
+    }
+    .grid-container__headline,.discover-more__headline{
+        @apply text-xl font-medium text-brandblack leading-[140%] not-italic;
+    }
+    .grid-container__headline--secondary,.discover-more__headline--secondary{
+        @apply text-2xl not-italic font-bold text-brandblack leading-extra-loose;
+    }
+    .grid-container__description,.discover-more__description,.why-us__description{
+        @apply text-xl not-italic font-medium text-brandblack leading-extra-loose;
+    }
+    .grid-container__description--secondary,.discover-more__description--secondary{
+        @apply text-lg font-normal pt-2 
+    }
+    .grid-container__img,.impressions__img,.marketing-insights__img{
+        @apply z-10 object-cover object-center;
+    }
+    .grid-container__background,.impressions__background{
+        @apply absolute inset-0 object-cover object-center h-full
+    }
+    .grid-container__blur-gradient{
+        @apply absolute object-cover object-center
+    }
+    .grid-container__blur-gradient--primary{
+        @apply h-full -left-40 -bottom-24
+    }
+    .grid-container__blur-gradient--primary{
+        @apply right-0 h-full bottom-24
+    }
+    .linebreak,.header__linebreak,.about-us__linebreak,.values__linebreak,.blog-title__linebreak,.testimonial__linebreak{
+        @apply hidden lg:inline-block
+    }
+    /* Logos */
+    .logos{
+        @apply flex flex-wrap justify-center gap-6 px-10 md:px-16 py-20
+    }
+    /* Testimonials */
+    .testimonial{
+        @apply px-6 md:px-20 space-y-12
+    }
+    .testimonial__headline{
+        @apply text-5xl font-bold text-center text-brandblack leading-[120%] not-italic;
+    }
+    .testimonial__cards{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6
+    }
+    .testimonial__item{
+        @apply flex flex-col items-center p-6 md:py-16 rounded-3xl border-2 border-solid border-[#6199ED] border-opacity-[26%];
+    }
+    .testimonial__description{
+        @apply text-lg font-semibold text-center text-brandblack not-italic leading-extra-loose
+    }
+    .testimonial__img{
+        @apply object-cover object-center pb-3 pt-[1.5625rem];
+    }
+    .testimonial__name{
+        @apply text-xl font-medium text-center text-brandblack leading-extra-loose not-italic
+    }
+    .testimonial__role{
+        @apply text-xs not-italic font-normal text-center text-brandblack leading-[18px]
+    }
+    /* Values */
+    .values{
+        @apply pt-32 space-y-10 px-6 sm:px-10 relative
+    }
+    .values--primary{
+        @apply md:pl-0 md:pr-20 bg-center bg-cover bg-no-repeat bg-[url('../images/grid_container_Blur_Gradient.png')]
+    }
+    .values--secondary{
+        @apply md:px-20
+    }
+    .values__header-container{
+        @apply space-y-4
+    }
+    .values__headline{
+        @apply text-5xl not-italic font-bold text-center text-brandblack md:px-4 lg:px-0 leading-[120%];
+    }
+    .values__headline-break,.about-us__sub-headlinebreak,.header__sub-headlinebreak,.blog-title__headline-break{
+        @apply hidden lg:inline-block
+    }
+    .values__sub-headline{
+        @apply text-base not-italic font-normal text-center text-brandblack leading-extra-loose opacity-[0.87];
+    }
+    .values__list{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+    }
+    .values__list--primary{
+        @apply gap-6 py-24 pl-20 pr-24 bg-[url('../images/Background-values.png')] bg-no-repeat bg-center bg-cover rounded-tr-[67px];
+    }
+    .values__list--secondary{
+        @apply gap-16 p-10 md:p-16 bg-[#F9F0FB] rounded-3xl;
+    }
+    .values__item{
+        @apply space-y-4
+    }
+    .values__name{
+        @apply text-2xl not-italic font-bold text-brandblack leading-[140%];
+    }
+    .values__description{
+        @apply text-base not-italic font-normal text-brandblack leading-extra-loose opacity-[0.87] ;
+    }
+    /* cta / call-to-action */
+    .call-to-action{
+        @apply py-32 px-6 sm:px-10 md:px-20 flex flex-col items-center justify-center gap-6 relative z-20
+    }
+    .call-to-action__headline{
+        @apply not-italic font-bold text-center text-brandblack text-[56px] leading-[110%] not-italic;
+    }
+    .call-to-action__headline-break{
+        @apply hidden lg:inline-block
+    }
+    .call-to-action__description{
+        @apply pb-2 text-base not-italic font-normal text-center text-brandblack leading-extra-loose;
+    
+    }
+    .call-to-action__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl text-white bg-brandblack hover:bg-brandblack-light
+    }
+    /* Plans */
+    .plan{
+        @apply overflow-hidden relative px-6 sm:px-10 md:px-20 pb-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+    }
+    .plan__item{
+        @apply z-10 py-12 space-y-8 bg-white rounded-t-3xl;
+    }
+    .plan__item--active{
+        @apply text-transparent border-4 border-solid border-[#6B7CFF] bg-gradient-to-t from-green-100 to-indigo-100 ; 
+    }
+    .plan__title{
+        @apply flex space-x-6 px-12 py-8 border-b-2 
+    }
+    .plan__list{
+        @apply space-y-6 px-12 
+    }
+    .plan__list-item{
+        @apply flex gap-5
+    }
+    .plan__list-content{
+        @apply text-base not-italic font-bold text-brandblack;    
+    }
+    .plan__name{
+        @apply text-4xl not-italic font-bold text-brandblack leading-[120%];
+    }
+    .plan__name-details{
+        @apply text-base not-italic font-bold text-brandblack opacity-60 leading-extra-loose;
+    }
+    .plan__footer{
+        @apply flex flex-col justify-center items-center space-y-6
+    }
+    .plan__description{
+        @apply  text-sm font-normal text-center text-brandblack leading-extra-loose opacity-[0.87];
+    }
+    .plan__pricing{
+        @apply pt-6 space-x-1
+    }
+    .plan__price{
+        @apply text-4xl not-italic font-bold text-brandblack leading-[120%];
+    }
+    .plan__pricing-details{
+        @apply text-xs not-italic font-normal text-brandblack opacity-60 leading-extra-loose ;
+    }
+    .plan__blur-gradient{
+        @apply absolute object-cover object-center
+    }
+    .plan__blur-gradient--primary{
+        @apply lg:-top-1/2 -left-10
+    }
+    .plan__blur-gradient--secondary{
+        @apply top-1/2 lg:-top-1/2 -right-10
+    }
+    /* faq / FAQ */
+    .faq{
+        @apply z-10 px-6 bg-white sm:px-10 md:px-20;
+        
+    }
+    .faq__container{
+        @apply grid grid-cols-1 gap-8 p-10 md:p-16 md:grid-cols-3 rounded-t-3xl bg-[#F0F2FE];
+    }
+    .faq__content{
+        @apply  space-y-7
+    }
+    .faq__headline{
+        @apply text-5xl font-bold text-brandblack leading-[120%];
+    }
+    .faq__sub-headline{
+        @apply text-base font-normal text-brandblack leading-extra-loose opacity-[0.87];
+    }
+    .faq__list{
+        @apply space-y-4 col-span-2
+    }
+    .faq__item{
+        @apply p-10 bg-white rounded-3xl;
+    }
+    
+    .faq__question-container{
+        @apply list-none flex flex-wrap items-center cursor-pointer focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500 rounded group-open:rounded-b-none group-open:z-[1] group-open:bg-white relative
+    }
+    .faq__button{
+        @apply flex items-center justify-between flex-1 text-sm
+    }
+    .faq__question{
+        @apply text-2xl font-bold text-brandblack leading-[140%]
+    }
+    .faq__icons-container{
+        @apply flex items-center justify-center w-4
+    }
+    .faq__answer-container{
+        @apply p-4
+    }
+    .faq__answer{
+        @apply text-base font-normal text-justify text-brandblack opacity-[0.87] leading-extra-loose;
+    }
+    /* Contact */
+    .contact{
+        @apply px-6 sm:px-10 md:px-20 pt-24 relative overflow-hidden space-y-16
+    }
+    .contact__title{
+        @apply font-bold text-center text-brandblack text-[56px] leading-[110%];
+    }
+    .contact__form{
+        @apply relative z-10 bg-[#F0F2FE] rounded-3xl grid grid-cols-1 gap-6 p-6 sm:p-10 md:py-16 sm:grid-cols-2 md:grid-cols-3 md:gap-12;
+    }
+    .form__header{
+        @apply space-y-4
+    }
+    .form__headline{
+        @apply text-4xl font-bold text-brandblack leading-[120%];
+    }
+    .form__subheadline{
+        @apply text-lg font-normal text-brandblack leading-extra-loose;
+    }
+    .contact__details{
+        @apply space-y-9
+    }
+    .contact__item{
+        @apply flex items-center gap-6
+    }
+    .contact__info{
+        @apply space-y-1
+    }
+    .contact__content{
+        @apply text-2xl font-bold text-brandblack leading-[140%];
+    }
+    .contact__description{
+        @apply text-base font-normal text-brandblack opacity-60 leading-extra-loose;
+    }
+    .contact__blur-gradient{
+        @apply absolute inset-y-0 object-cover object-center -left-10
+
+    }
+    /* About us */
+    .about-us{
+        @apply px-6 sm:px-10 md:px-20 pb-32  flex flex-col justify-center items-center pt-16 -z-20 gap-6
+    }
+    .about-us__headline-label{
+        @apply text-2xl font-bold text-center not-italic leading-[120%] w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] text-transparent bg-clip-text 
+    }
+    .about-us__headline{
+        @apply text-5xl font-bold text-center text-brandblack not-italic leading-[120%];
+    }
+    .about-us__sub-headline{
+        @apply text-base not-italic font-normal text-center text-brandblack leading-extra-loose;
+    }
+    /* Goals */
+    .goals{
+        @apply grid grid-cols-1 bg-[#F0F2FE] gap-16 px-6 py-24 md:grid-cols-2 sm:px-10 md:px-20;
+    }
+    /* Blog */
+    .trending-post{
+        @apply  z-10 relative overflow-hidden px-6 sm:px-10 md:px-20
+    }
+    .trending-post__container{
+        @apply grid grid-cols-1 border border-[#D8D8D8] gap-12 px-6 py-16 md:grid-cols-2 sm:px-10 md:px-16;
+    }
+    .trending-post__img{
+        @apply object-cover object-center z-10
+    }
+    .trending-post__blur-gradient{
+        @apply object-cover object-center absolute
+    }
+    .trending-post__blur-gradient--primary{
+        @apply top-0 left-0
+    }
+    .trending-post__blur-gradient--secondary{
+        @apply top-0 right-0 
+    }
+    /* team */
+    .team{
+        @apply px-6 sm:px-10 md:px-20 pt-32 flex gap-8 flex-col lg:flex-row
+    }
+    .team__list{
+        @apply flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6
+    }
+    .team__member{
+        @apply bg-violet-300 bg-[#E0E4FC] rounded-xl;
+    }
+    .team__img{
+        @apply w-full object-cover object-center
+    }
+    .team__body{
+        @apply p-6 space-y-1
+    }
+    .team__name{
+        @apply text-2xl font-bold text-brandblack;
+    }
+    .team__role{
+        @apply text-base font-normal text-brandblack opacity-90 leading-extra-loose;
+    }
+    /* Post */
+    .post{
+        @apply pt-32 px-6 sm:px-10 md:px-20 space-y-16
+    }
+    .post__headline{
+        @apply font-bold text-center text-brandblack text-[56px] leading-[110%]
+    }
+    .post__list{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-16
+    }
+    .post__item{
+        @apply space-y-4
+    }
+    .post__img{
+        @apply w-full object-cover object-center
+    }
+    .post__title{
+        @apply pt-2 text-2xl font-bold text-brandblack leading-[140%]
+    }
+    .post__summary{
+        @apply text-base font-normal text-brandblack leading-extra-loose opacity-[0.87];
+    }
+    .post__date{
+        @apply text-base font-medium opacity-60 text-brandblack leading-extra-loose;
+    }
+    /* Blog-post */
+    .blog-title{
+        @apply px-6  sm:px-10 md:px-20 pt-24 relative overflow-hidden
+    }
+    .blog-title__container{
+        @apply z-10 space-y-6
+    }
+    .blog-title__headline{
+        @apply text-5xl font-bold text-center text-brandblack leading-[120%];
+    }
+    .blog-title__date{
+        @apply text-base font-medium text-center text-brandblack opacity-60 leading-extra-loose;
+    }
+    .blog-title__img{
+        @apply z-10 object-cover object-center lg:max-h-80
+    }
+    .blog-title__blur-gradient{
+        @apply object-cover object-center absolute
+    }
+    .blog-title__blur-gradient--primary{
+        @apply top-0 left-0
+    }
+    .blog-title__blur-gradient--secondary{
+        @apply top-0 right-0
+    }
+    .article{
+        @apply px-10 sm:px-14 md:px-32 py-16 space-y-7
+    }
+    .article__headline{
+        @apply text-5xl font-bold text-brandblack leading-[120%];
+    }
+    .article__sub-headline{
+        @apply text-4xl font-bold text-brandblack leading-[120%];
+    }
+    .article__content{
+        @apply text-base font-normal text-brandblack;
+
+    }
+    .article__quote{
+        @apply pl-5 text-lg font-normal border-l-2 leading-extra-loose border-l-brandviolet text-brandblack;
+    }
+    /* Button */
+    .button{
+        @apply px-10 py-4 text-base not-italic font-bold text-center rounded-xl leading-extra-loose;
+    }
+    .button--primary{
+        @apply text-white bg-brandblack hover:bg-brandblack-light
+    }
+    .button--secondary{
+        @apply bg-white text-brandblack hover:bg-brandblack hover:text-white
+    }
+    .button--default{
+        @apply bg-brandviolet text-brandblack hover:bg-brandblack-light hover:text-white
+    }
+    /* form */
+    .form,.footer__form,.header__form{
+        @apply space-y-4 col-span-2 
+    }
+    .form--primary{
+        @apply space-y-12
+    }
+    .form__fields{
+        @apply space-y-2
+    }
+   
+    .form__container,.header__form-container,.footer__form-container{
+        @apply flex rounded-xl;
+    }
+    .form__container--primary,.header__form-container{
+        @apply bg-white py-2 self-center
+    }
+    .form__row{
+        @apply grid grid-cols-1 sm:grid-cols-2 gap-4
+    }
+    .form__group,.header__form-group,.footer__form-group{
+        @apply flex rounded-lg bg-white
+    }
+    .form__label,.header__form-label,.footer__form-label{
+        @apply sr-only
+    }
+    .form__input,.header__form-input,.footer__form-input{
+        @apply flex-1 px-6 py-4 m-0 text-base font-normal capitalize transition ease-in-out rounded-lg opacity-80 text-brandblack focus:text-gray-700 focus:bg-white focus:border-blue-200 focus:border-2 focus:outline-none;
+    }
+    .form__input--dark,.footer__form-input{
+        @apply text-white text-opacity-50 rounded-lg bg-brandblack focus:border focus:bg-brandblack-light ;
+    }
+    .form__textarea{
+        @apply  block w-full px-3 py-1.5 text-base font-normal text-brandblack opacity-80 bg-white bg-clip-padding rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-2 focus:border-blue-200 focus:outline-none
+    }
+    /* Footer */
+    .footer{
+        @apply relative z-10 px-6 py-16 space-y-12 sm:px-10 md:px-16;
+    }
+    .footer::before{
+        @apply absolute bottom-0 left-0 w-full bg-center bg-cover -right-60 content-[''] top-[-32rem] bg-[url('../images/Blur_Gradient_footer.png')];
+    }
+    .footer::after{
+        @apply absolute inset-0 w-full h-full content-[''] bg-[url('../images/footer_Background.png')] bg-no-repeat bg-center bg-cover;     
+    }
+    .footer__container{
+        @apply absolute inset-0 z-10
+    }
+    .footer__cols{
+        @apply z-10 relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5
+    }
+    .footer__column{
+        @apply space-y-2
+    }
+    .footer__column-subscribe{
+        @apply sm:col-span-2 space-y-8
+    }
+    .footer__column-title{
+        @apply text-lg font-bold text-white capitalize leading-extra-loose;
+    }
+    .footer__column-item{
+        @apply text-base not-italic font-normal leading-extra-loose;
+    }
+    .footer__column-link{
+        @apply text-white opacity-60 hover:opacity-100 active:opacity-100;
+    }
+    .footer__button{
+        @apply px-10 py-4 text-base font-bold text-center rounded-xl bg-white text-brandblack hover:bg-brandblack hover:text-white
+    }
+    .footer__row{
+        @apply z-10 relative flex gap-8 justify-center items-center overflow-hidden
+    }
+    .footer__copyright{
+        @apply relative pl-16 text-xs not-italic font-normal text-white opacity-50 leading-[18px];      
+    }
+    .footer__copyright::before{
+        @apply absolute top-1/2 -left-full content-[''] w-[260px] h-[3px] border-b border-solid border-[#888888];
+    }
+    .footer__socials{
+        @apply flex gap-6 items-center relative pr-16
+    }
+    .footer__socials::after{
+        @apply absolute top-1/2 -right-full content-[''] w-[260px] h-[3px] border-b border-solid border-[#888888];
+       
+   }
+   .footer__headline{
+    @apply text-lg not-italic font-semibold text-white leading-extra-loose;
+    }
+    
+}
